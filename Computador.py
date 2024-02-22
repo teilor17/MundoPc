@@ -3,8 +3,8 @@ class Computador:
     id_computadora = 0
 
     def __init__(self, nombre, monitor, teclado, raton):
-        Computador.id_computadora += 1
         Computador.contador_computadoras += 1
+        Computador.contador_computadoras = Computador.id_computadora
         self._nombre = nombre
         self._monitor = monitor
         self._teclado = teclado
