@@ -7,4 +7,21 @@ class Computador:
         self._monitor = monitor
         self._teclado = teclado
         self._raton = raton
-        
+
+    @property
+    def nombre(self):
+        return self._nombre
+
+    @property
+    def monitor(self):
+        return self._monitor
+
+    @property
+    def teclado(self):
+        return self._teclado
+
+    @property
+    def raton(self):
+        return self._raton
+
+    @getattr()
