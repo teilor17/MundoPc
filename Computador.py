@@ -1,4 +1,7 @@
-class Computador:
+from Raton import Raton
+from Teclado import Teclado
+from Monitor import Monitor
+class Computador(Monitor,Teclado,Raton):
     contador_computadoras = 0
     id_computadora = 0
 
@@ -6,9 +9,6 @@ class Computador:
         Computador.contador_computadoras += 1
         Computador.contador_computadoras = Computador.id_computadora
         self._nombre = nombre
-        self._monitor = monitor
-        self._teclado = teclado
-        self._raton = raton
 
     @property
     def nombre(self):
