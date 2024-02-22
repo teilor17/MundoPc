@@ -21,4 +21,3 @@ class DispoEntrada:
 
     def __str__(self):
         return f'Tipo de Entrada : {self._tipoEntrada}, Marca : {self._marca}'
-    
