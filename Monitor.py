@@ -23,4 +23,3 @@ class Monitor:
 
     def __str__(self):
         return f'Marca : {self._marca}, Tamaño : {self._tamaño}'
-    
